@@ -1,6 +1,6 @@
-def runningSum(sum):
+def runningSum(nums):
     completed = []
-    for i, value in enumerate(sum):
+    for i, value in enumerate(nums):
         if i == 0:
             completed.append(value)
         else:
