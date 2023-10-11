@@ -18,7 +18,7 @@ Example:
 class Solution(object):
     def leftRightDifference(self, nums):
         """
-        :type nums: List[int]
+        :type nums: List[int]k
         :rtype: List[int]
         """
         sumLeft, sumRight = 0, sum(nums)
