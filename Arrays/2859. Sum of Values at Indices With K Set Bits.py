@@ -26,18 +26,3 @@ class Solution(object):
         :rtype: int
         """
         return sum(nums[i] for i in range(len(nums)) if bin(i).count('1') == k)
-
-
-window = [5, 2, 4, 7, 1, 3]
-k = 3
-answer = [11, 13, 12, 11]
-
-
-def slide(window, k):
-    ans = []
-    for i in range(len(window) - k):
-        ans.append(sum(window))
-
-
-
-print(slide(window, k))
