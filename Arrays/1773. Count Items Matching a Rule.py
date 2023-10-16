@@ -21,6 +21,12 @@ class Solution(object):
         :type ruleValue: str
         :rtype: int
         """
+        # Define a dictionary to map ruleKey to its corresponding index in the items list
+        # "type" maps to index 0, "color" maps to index 1, "name" maps to index 2
         marker = {"type": 0, "color": 1, "name": 2}[ruleKey]
+
+        # Initialize a counter for the number of items that match the rule
         score = sum(1 for item in items if item[marker] == ruleValue)
+
+        # Return the count of items that match the rule
         return score
