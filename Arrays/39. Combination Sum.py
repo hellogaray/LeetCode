@@ -25,7 +25,7 @@ class Solution:
         # Initialize a list to store the result combinations
         result = []
 
-        def backtrack(index, current_combination, current_sum):
+        def backtrack(index, current_combination: List[int], current_sum):
             # If the current combination sums up to the target, add it to the result
             if current_sum == target:
                 result.append(current_combination.copy())
