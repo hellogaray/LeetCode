@@ -6,7 +6,6 @@ This repository contains my solutions to various problems on LeetCode. Each solu
 
 - **/Arrays:** Solutions related to array manipulation.
 - **/Strings:** Solutions for string-related problems.
-- **/...** (add more directories as needed)
 
 ## How to Use
 
