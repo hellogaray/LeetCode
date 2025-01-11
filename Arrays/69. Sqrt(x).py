@@ -8,3 +8,12 @@ Example 1:
     Output: 2
     Explanation: The square root of 4 is 2, so we return 2.
 """
+
+
+def mySqrt(x):
+    ...
+
+x = 4
+print(mySqrt(x))
+x = 8
+print(mySqrt(x))
