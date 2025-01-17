@@ -11,16 +11,14 @@ Example 1:
     Thus, the result should be [1,2,4].
 """
 
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        # Start from the last digit and handle carry
+        for i in range(len(digits) - 1, -1, -1):
+            if digits[i] < 9:
+                digits[i] += 1
+                return digits
+            digits[i] = 0  # If 9, set to 0 and continue
 
-def plusOne(List):
-    number = 0
-    new_list = []
-    dec = len(List) - 1
-    for i in List:
-        number += i * (10**dec)
-        dec -= 1
-    number += 1
-    for i in str(number):
-        new_list.append(int(i))
-
-    return new_list
+        # If all digits were 9, we need an extra leading 1
+        return [1] + digits
