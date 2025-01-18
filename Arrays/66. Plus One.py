@@ -10,3 +10,17 @@ Example 1:
     Explanation: The array represents the integer 123.  Incrementing by one gives 123 + 1 = 124.
     Thus, the result should be [1,2,4].
 """
+
+
+def plusOne(List):
+    number = 0
+    new_list = []
+    dec = len(List) - 1
+    for i in List:
+        number += i * (10**dec)
+        dec -= 1
+    number += 1
+    for i in str(number):
+        new_list.append(int(i))
+
+    return new_list
