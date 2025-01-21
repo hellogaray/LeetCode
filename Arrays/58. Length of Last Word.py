@@ -1,12 +1,17 @@
-"""
-Given a sorted array of distinct integers and a target value, return the index if the target is found.
-If not, return the index where it would be if it were inserted in order.
-You must write an algorithm with O(log n) runtime complexity.
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal
+
+consisting of non-space characters only.
+
+
 
 Example 1:
-    Input: nums = [1,3,5,6], target = 5
-    Output: 2
-"""
+
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
