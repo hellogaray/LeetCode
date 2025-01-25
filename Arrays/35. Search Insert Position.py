@@ -12,13 +12,20 @@ Example 1:
 
 class Solution:
     def searchInsert(self, nums, target):
-        left = 0
-        right = len(nums) - 1
+        # Initialize the left and right pointers
+        left, right = 0, len(nums) - 1
 
+        # Perform binary search
+        while left <= right:
+            mid = (left + right) // 2  # Find the middle index
 
+            if nums[mid] == target:  # If target is found, return its index
+                return mid
+            elif nums[mid] < target:  # If target is greater, search in the right half
+                left = mid + 1
+            else:  # If target is smaller, search in the left half
+                right = mid - 1
 
-nums = [2, 9, 11, 15]
-target = 16
+        # If the target is not found, return the insertion position
+        return left
 
-solution = Solution()
-print(solution.searchInsert(nums, target))
