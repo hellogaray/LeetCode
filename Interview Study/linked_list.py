@@ -140,19 +140,31 @@ class LinkedList:
             current = current.next_node
         return '->'.join(nodes)
 
-l = LinkedList()
-l.add(1)
-l.add(2)
-l.add(3)
-l.insert(3, 2)
-print(l.size())
-print(l)
-l.remove_at_index(5)
-print(l)
-l.remove_at_index(10)
-print(l)
+    def node_at_index(self, index):
+        if index == 0:
+            return self.head
+        else:
+            current = self.head
+            position = 0
+            while position < index:
+                current = current.next_node
+                position += 1
+            return current
 
-
-
-
-print(l.search(3))
+#
+# l = LinkedList()
+# l.add(1)
+# l.add(2)
+# l.add(3)
+# l.insert(3, 2)
+# print(l.size())
+# print(l)
+# l.remove_at_index(5)
+# print(l)
+# l.remove_at_index(10)
+# print(l)
+#
+#
+#
+#
+# print(l.search(3))
