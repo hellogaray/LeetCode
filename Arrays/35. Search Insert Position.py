@@ -17,7 +17,6 @@ class Solution:
 
 
 
-
 nums = [2, 9, 11, 15]
 target = 16
 
