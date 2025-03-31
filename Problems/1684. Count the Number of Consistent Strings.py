@@ -28,5 +28,4 @@ class Solution:
                     count -= 1
                     break
 
-        # Return the final count of consistent strings
         return count
