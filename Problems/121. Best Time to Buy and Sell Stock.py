@@ -23,9 +23,3 @@ def maxProfit(prices):
             buy_day = sell_day
         sell_day += 1
     return max_profit
-
-
-
-prices = [1,2,5,3,6,4]
-print(maxProfit(prices))
-
