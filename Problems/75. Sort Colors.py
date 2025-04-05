@@ -16,6 +16,3 @@ def bucket_sort(nums):
             nums[i] = n  # Fill the original array with the sorted values
             i += 1
     return nums
-
-nums = [2,0,2,1,1,0]
-print(bucket_sort(nums))
