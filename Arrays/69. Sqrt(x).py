@@ -9,8 +9,7 @@ Example 1:
     Explanation: The square root of 4 is 2, so we return 2.
 """
 
-
-lass Solution:
+class Solution:
     def mySqrt(self, x: int) -> int:
         if x < 2:
             return x
